@@ -1,3 +1,140 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{border:0;margin:0;padding:0}
+article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object
+{display:block}
+a img{border:0}
+figure{position:relative}
+figure img{width:100%}
+
+
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.row {
+width: 100%;
+max-width: 1140px;
+min-width: 755px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.ifx-1, .ifx-2, .ifx-3, .ifx-4, .ifx-5, .ifx-6, .ifx-7, .ifx-8, .ifx-9, .ifx-10, .ifx-11 {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+}
+
+.row .ifx-1 {
+width: 4.85%;
+}
+
+.row .ifx-2 {
+width: 13.45%;
+}
+
+.row .ifx-3 {
+width: 22.05%;
+}
+
+.row .ifx-4 {
+width: 30.75%;
+}
+
+.row .ifx-5 {
+width: 39.45%;
+}
+
+.row .ifx-6 {
+width: 48%;
+}
+
+.row .ifx-7 {
+width: 56.75%;
+}
+
+.row .ifx-8 {
+width: 65.4%;
+}
+
+.row .ifx-9 {
+width: 74.05%;
+}
+
+.row .ifx-10 {
+width: 82.7%;
+}
+
+.row .ifx-11 {
+width: 91.35%;
+}
+
+.row .ifx-12 {
+width: 100%;
+float: left;
+}
+
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	}
+
+	}
+
+@media mobile, only screen and (max-width: 767px) {
+
+	body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	}
+
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+	.row .ifx-1, .row .ifx-2, .row .ifx-3, .row .ifx-4, .row .ifx-5, .row .ifx-6, .row .ifx-7, .row .ifx-8, .row .ifx-9, .row .ifx-10, .row .ifx-11, .row .ifx-12 {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+}
+
+.container p {
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 20px 0 0 0;
+	}
+
+
 .ifx-checkbox input {
   position: absolute;
   z-index: -1;
