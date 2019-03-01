@@ -1,4 +1,3 @@
-ifx-ui
+# if(x):UI
 
-[logo]: index.png "if(x) : UI"
 ![alt text](/index.png)
