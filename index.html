@@ -28,15 +28,16 @@ font-weight: 600;
       }
 
       .gradient, body {
-          background-image: -webkit-radial-gradient(right bottom, ellipse farthest-corner,rgb(249, 237, 35) 0%,rgba(255, 61, 110, 0.87) 100%);
-          background-image: radial-gradient(ellipse farthest-corner at right bottom,rgb(249, 237, 35) 0%,rgba(255, 61, 110, 0.87) 100%);
-          background-image: -ms-radial-gradient(right bottom, ellipse farthest-corner,rgb(249, 237, 35) 0%,rgba(255, 61, 110, 0.87) 100%);
+          background-image: -webkit-radial-gradient(right bottom, ellipse farthest-corner,rgb(249, 237, 35) 0%,rgba(255, 61, 110, 0.87) 100%) !important;
+          background-image: radial-gradient(ellipse farthest-corner at right bottom,rgb(249, 237, 35) 0%,rgba(255, 61, 110, 0.87) 100%) !important;
+          background-image: -ms-radial-gradient(right bottom, ellipse farthest-corner,rgb(249, 237, 35) 0%,rgba(255, 61, 110, 0.87) 100%) !important;
       }
 
 
       .animated{
         box-shadow: 10px 0px 20px pink;
         border-radius: 10px;
+        width: 100%;
       }
 
       body  p{
@@ -55,22 +56,17 @@ font-weight: 600;
        }
     </style>
   </head>
-  <body>
+  <body class="if-black-scrollbar">
 
     <div class="container">
+
+      <!-- nav-bar -->
 <input type="checkbox" id="nav-toggle" hidden="">
+
 <nav class="nav black">
-        <!--
-    Метка с именем `id` чекбокса в `for` атрибуте
-    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
-    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
-    См: http://timpietrusky.com/advanced-checkbox-hack
-    -->
+
         <label for="nav-toggle" class="nav-toggle" onclick=""></label>
-        <!--
-    Здесь размещаете любую разметку,
-    если это меню, то скорее всего неупорядоченный список <ul>
-    -->
+
         <h2 class="logo">
             <a href="#">if(x) : UI</a>
         </h2>
@@ -84,10 +80,12 @@ font-weight: 600;
 
         </li></ul>
     </nav>
+    <!-- nav-bar -->
+
+            <h1 class="animated flipInX gradient">if(x):UI - <span>набор инструментов для создания</span> WebApp</h1>
 
     	<div class="row">
 
-        <h1 class="animated flipInX gradient">if(x):UI - <span>набор инструментов для создания</span> WebApp</h1>
 
     		<div  class="ifx-1">
     			<p>if(x)-1</p>
